@@ -1,0 +1,181 @@
+.btn{
+    &,
+    &:link,
+    &:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        text-align: center;
+        padding: 1.5rem 3rem;
+        display: inline-block;
+        border-radius: 10rem;
+        transition: all 0.2s;
+        position: relative;
+        font-size: $default-font-size;
+
+        //Change for the <button> element
+        border: none;
+        cursor: pointer;
+    }
+    &:hover,
+    &:focus {
+        outline: none;
+        transform: translateY(-0.3rem);
+        box-shadow: 0 1rem 2rem rgba($color-black,.2);
+
+        &::after{
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
+    }
+    &:active{
+        transform: translateY(-1px);
+        box-shadow: 0 .5rem 1rem rgba($color-black,.2);
+    }
+    &--green-round{
+        background-color: rgba($color-green-dark, .9);
+        color: $color-beige-light;
+
+        &::after{
+            background-color: $color-green-dark;
+        }
+    }
+    &--lite-round{
+        background-color: rgba($color-white, .2);
+        color: $color-beige-light;
+         box-shadow: 0 1rem 2rem rgba($color-black, .3);
+
+        &::after{
+            background-color: rgba($color-white, .4);
+        }
+    }
+
+    &--green{
+        background-color: $color-green-lite;
+        color: $color-white;
+
+        &::after{
+            background-color: $color-green-lite;
+        }
+    }
+    &::after{
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 10rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all 0.5s;
+    }
+    &--animated{
+        animation: moveInBottom .5s ease-out .75s;
+        animation-fill-mode: backwards;
+    }
+}
+
+.btn-text{
+    ;
+    &:link,
+    &:visited{
+        font-size: $default-font-size;
+        color: $color-green-dark;
+        display: inline-block;
+        text-decoration: none;
+        border-bottom: 0.1rem solid $color-green-dark;
+        padding: .3rem;
+        transition: all .2s;
+        margin-bottom: 2rem;
+    }
+    &:hover{
+        background-color:$color-green-dark;
+        color:$color-beige-light;
+        box-shadow: 0 1rem 2rem rgba($color-black, .15);
+        transform: translateY(-.2rem);
+    }
+    &:active{
+        box-shadow: 0 .5rem 1rem rgba($color-black, .15);
+        transform: translateY(0);
+    }
+}
+
+.btn__prev, .btn__next{
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    top: 13%;
+    width: auto;
+    padding: 1.6rem;
+    color: $color-green-dark;
+    font-weight: bold;
+    font-size: 1.8rem;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+
+    @include respond(phone){
+      display: none;
+    }
+}
+
+.btn__next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    margin-right: 2rem;
+}
+.btn__prev{
+    margin-left: 1.5rem;
+    @include respond(tab-port){
+        margin-left: 2rem;
+        margin-right: auto;
+    }
+}
+
+.btn__prev:hover, .btn__next:hover{
+    background-color: rgba($color-green-dark,.7);
+    color: $color-white;
+}
+.dot {
+    cursor: pointer;
+    height: 1.5rem;
+    width: 1.5rem;
+    margin: 0 .2rem;
+    background-color: $color-green-lite;
+    border-radius: 50%;
+    display: inline-block ;
+    transition: background-color 0.6s ease;
+
+    @include respond(phone){
+      display: none;
+    }
+}
+
+.active, .dot:hover {
+  background-color: $color-green-dark;
+}
+
+
+#btn__top{
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 2rem; /* Place the button at the bottom of the page */
+    right: 3.5rem; /* Place the button 30px from the right */
+    z-index: 5000; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color:rgba($color-white, .4) ; /* Set a background color */
+    color: rgba($color-green-dark, .9); /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 1.5rem; /* Some padding */
+    border-radius: 50%; /* Rounded corners */
+    font-size: 2rem; /* Increase font size */
+
+    @include respond(phone){
+     right: 2rem;
+     }
+}
+
+#btn__top:hover {
+    background-color: rgba($color-green, .7);; /* Add a dark-grey background on hover */
+}

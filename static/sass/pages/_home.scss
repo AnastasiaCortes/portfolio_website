@@ -1,0 +1,52 @@
+.section-about{
+  background-image: linear-gradient(
+                  to bottom,
+                  rgba($color-beige,1),
+                  rgba($color-beige, .9));
+  background-size: cover;
+  padding: 15rem 0 12rem 0;
+  margin-top: -10vh;
+  overflow: hidden;
+  }
+.section-skills{
+  background-image: linear-gradient(
+                  to top,
+                  rgba($color-beige-light,.7),
+                  rgba($color-beige,0.9));
+
+  background-size: cover;
+
+  padding-bottom: 10rem;
+
+}
+.section-works{
+  background-image: linear-gradient(
+                  to top,
+                  rgba($color-green,.9),
+                  rgba($color-beige-light,.7));
+  background-size: cover;
+  padding-bottom: 10rem;
+
+
+}
+.section-contact{
+  background-image: linear-gradient(
+                  to top,
+                  rgba($color-green, 1),
+                  rgba($color-green,.9));
+  background-size: cover;
+  padding-bottom: .5rem;
+}
+footer{
+  background-color:rgba($color-green, 1) ;
+  text-align: center !important;
+  color: $color-white;
+  padding: 1rem;
+
+}
+.copy{
+  display: block;
+  text-align: center;
+   font-size: 1.3rem;
+}
+

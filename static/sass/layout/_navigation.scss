@@ -1,0 +1,50 @@
+.navigation{
+  background-color: rgba($color-white,0);
+  padding-right: 3rem;
+
+
+  &:hover &__link:not(:hover){
+      color: rgba($color-green-dark, .6);
+      transform: scale(.9);
+    }
+  &__list{
+    float: right;
+    list-style: none;
+    margin-bottom: 0;
+    margin-top: 0rem;
+    padding: 1rem;
+    overflow: hidden;
+
+    width: max-content;
+    margin-left: auto;
+
+
+  }
+
+  &__item{
+    float: right;
+  }
+
+  &__link{
+    text-transform: uppercase;
+    color: $color-white;
+    text-decoration: none;
+    display: block;
+    padding: 1rem;
+    margin: 1rem;
+
+    animation-name: moveInLeft;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+
+    transition: all .1s;
+
+    &:hover, &:active{
+      background-color: rgba($color-beige-light, .5);
+      box-shadow: 0 .9rem 1rem rgba($color-black, .15);
+      color: $color-green-dark;
+      border-radius: .3rem;
+      transform: scale(1.1);
+    }
+  }
+}

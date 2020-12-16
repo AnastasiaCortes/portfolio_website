@@ -1,0 +1,63 @@
+.story {
+  width: 60%;
+  height: auto;
+  margin: 0 auto;
+  box-shadow: 0 3rem 6rem rgba($color-black, .1);
+  background-color: rgba($color-beige-light, .6);
+  border-radius: .3rem;
+  padding: 4rem 6rem;
+  font-size: $default-font-size;
+  outline-offset: 2.5rem;
+  transition: all .1s;
+
+  &__shape {
+    margin: 2rem 0;
+    width: 25rem;
+    height: 25rem;
+    float: left;
+    //to move floated element use transform:translate
+    transform: translateX(-3rem) ;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
+
+    @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+      -webkit-shape-outside: circle(50% at 50% 50%);
+      //it has to be floated, have height and width for it to work
+      //for the element to flow in a circle
+      shape-outside: circle(50% at 50% 50%);
+
+      -webkit-clip-path: circle(50% at 50% 50%);
+      //for element to have circle shape
+      clip-path: circle(50% at 50% 50%);
+      border-radius: none;
+    }
+  }
+
+  &__img {
+    // 100% of the parent element( story__shape)
+    height: 100%;
+  }
+
+  &__text {
+    padding: 2rem 0;
+    hyphens: auto;
+  }
+
+  @media only screen and (hover: none){
+    width: 70%;
+    outline-offset: 2rem;
+    outline: 1.2rem solid $color-green-lite;
+    box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
+
+    }
+  &:hover{
+    outline: 1.2rem solid $color-green-lite;
+    transform:  scale(1.07) translateY(1rem);
+    box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
+  }
+  &:hover &__shape{
+    transform: scale3d(1.02,1.02,1.02)  translateX(-3.5rem) translateY(-1rem);
+  }
+}

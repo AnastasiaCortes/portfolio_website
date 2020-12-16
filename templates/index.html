@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+     <link rel="shortcut icon"  href="{{ url_for('static', filename='img/fav.png')}}">
+
+   <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style.css')}}">
+
+
+    <title>Anastasia Cortes</title>
+</head>
+<body>
+<button onclick="topFunction()" id="btn__top" title="Go to top"><b>&#8679;</b></button>
+           <!-- *-+*-+*-+*-+*-+*-+*-+*-+*-+ Header  *-+*-+*-+*-+*-*-+*-+*-+*-+*-+*-+*-+*-+ -->
+<header class="header">
+         <!-- *-+*-+*-+*-+*-+*-+*-+*-+*-+ Navigation *-+*-+*-+*-+*-+*-+*-+*-+ -->
+<div class="navigation">
+        <ul class="navigation__list">
+            <li class="navigation__item"><a href="#contact" class="navigation__link"> Contact</a></li>
+            <li class="navigation__item"><a href="/resume" class="navigation__link"> Resume</a></li>
+            <li class="navigation__item"><a href="#projects" class="navigation__link"> Projects</a></li>
+            <li class="navigation__item"><a href="#skills" class="navigation__link"> Skills</a></li>
+            <li class="navigation__item"><a href="#about" class="navigation__link"> About</a></li>
+        </ul>
+</div>
+
+    <div class="header__text-box">
+        <h1 class="heading-primary">
+            <span class="heading-primary--sub">Hey, I'm</span>
+            <span class="heading-primary--main">Anastasia Cortes</span>
+        </h1>
+    </div>
+</header>
+<main>
+    <!-- *-+*-+**-+*-+*-+*-+*-+*-+*-+*-+*-+ About Section *-+*-+*-+*-+*-+*-+*-+*-+ -->
+    <section class="section-about">
+        <div class="u-center-text u-margin-bottom-big" id="about">
+            <h2 class="heading-secondary" >
+               About Me
+            </h2>
+        </div>
+            <div class="story">
+                <figure class="story__shape">
+                    <img src="static/img/me.jpg" alt="Picture of me" class="story__img">
+                </figure>
+                <div class="story__text">
+                    <h2 class="heading-tertiary u-margin-bottom-small">So, who am i?</h2>
+                    <p>I’m a <b>self-taught</b> developer specializing in both <b>front-end</b> and <b>back-end</b> technologies currently based in Miami metropolitan area. I enjoy building interactive and responsive web pages. I’m focused on writing clean, efficient and maintainable code.</p>
+<br>
+                    <p>Constantly learning and professionally growing. I’m interested in working on ambitious projects with positive people. Always ready for any challenges thrown my way!</p>
+                </div>
+            </div>
+    </section>
+<!-- *-+*-+*-+*-+*-+*-+*-+*-+*-+ Skills Section *-+*-+*-+*-+*-+*-+*-+*-+ -->
+    <section class="section-skills" id="skills">
+        <div class="u-center-text u-margin-bottom-big">
+            <h2 class="heading-secondary">
+                Skills
+            </h2>
+        </div>
+        <div class="row">
+            <div class="col-1-of-3">
+                <div class="skills">
+                <ion-icon class="skills__logo" name="logo-python"></ion-icon>
+                <div class="skills__text">
+                    <b>Python</b>
+                </div>
+                    <div class="skills__spec">
+                        Flask, Django
+                    </div>
+                </div>
+            </div>
+            <div class="col-1-of-3">
+                <div class="skills">
+                    <ion-icon class="skills__logo" name="logo-html5"></ion-icon>
+                        <div class="skills__text">
+                            <b>HTML</b>
+                        </div>
+                        <div class="skills__spec">
+                            HTML5
+                        </div>
+                    </div>
+                </div>
+        <div class="col-1-of-3">
+            <div class="skills">
+                <ion-icon class="skills__logo" name="logo-css3"></ion-icon>
+                    <div class="skills__text">
+                        <b>CSS</b>
+                    </div>
+                    <div class="skills__spec">
+                        Sass, SCSS
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1-of-3">
+                <div class="skills">
+                    <ion-icon class="skills__logo" name="logo-nodejs"></ion-icon>
+                    <div class="skills__text">
+                        <b>Java Script</b>
+                    </div>
+                    <div class="skills__spec">
+                        Node, NPM
+                    </div>
+                </div>
+            </div>
+            <div class="col-1-of-3">
+                <div class="skills">
+                <ion-icon class="skills__logo" name="server-outline"></ion-icon>
+                <div class="skills__text">
+                      <b>Databases</b>
+                    </div>
+                    <div class="skills__spec">
+                        Postgre SQL, Mongo DB
+                    </div>
+                </div>
+            </div>
+            <div class="col-1-of-3">
+                <div class="skills">
+                    <ion-icon class="skills__logo" name="logo-github"></ion-icon>
+                    <div class="skills__text">
+                        <b>Version Control</b>
+                    </div>
+                    <div class="skills__spec">
+                        Git, GitHub
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!-- *-+*-+*-+*-+*-+*-+*-+*-+*-+ Works Section *-+*-+*-+*-+*-+*-+*-+*-+ -->
+    <section class="section-works" id="projects">
+        <div class="u-center-text u-margin-bottom-big">
+            <h2 class="heading-secondary">
+                My Projects
+            </h2>
+        </div>
+      <div class="carousel">
+      <!-- Button Left -->
+      <a class="btn__prev" onclick="plusSlides(-1)">&#10094;</a>
+
+        <!-- Image Container -->
+        <div class="carousel__slide ">
+            <div class="row">
+                <div class="col-1-of-3">
+                    <div class="works">
+                        <a href="#" title="" class="works__link">
+                            <img src="static/img/1.jpg" alt="" class="works__img">
+                        </a>
+                        <div class="works__card">
+                            <div class="works__card-text">
+                                <h3 class="project">First project</h3>
+                                <p>This project is not finished yet but will be ready soon.</p>
+                            </div>
+                            <a href="#popup-1" id="btn-1" class="btn btn--green-round works__card-btn">To learn more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1-of-3">
+                    <div class="works">
+                        <a href="#" title="" class="works__link">
+                            <img src="static/img/2.jpg" alt="" class="works__img">
+                        </a>
+                        <div class="works__card">
+                            <div class="works__card-text">
+                                <h3 class="project">Second project</h3>
+                                <p>This project is not finished yet but will be ready soon.</p>
+                            </div>
+                            <a href="#popup-2" id="btn-2"  class="btn btn--green-round works__card-btn">To learn more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1-of-3">
+                    <div class="works last">
+                        <a href="" title="" class="works__link">
+                            <img src="static/img/3.jpg" alt="" class="works__img">
+                        </a>
+                        <div class="works__card">
+                            <div class="works__card-text">
+                                <h3 class="project">Third project</h3>
+                                <p>This project is not finished yet but will be ready soon.</p>
+                            </div>
+                            <a href="#popup-3" class="btn btn--green-round works__card-btn" id="btn-3">To learn more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel__slide" id="slide">
+            <div class="row">
+                <div class="col-1-of-3">
+                    <div class="works">
+                         <a href="" title="" class="works__link">
+                            <img src="static/img/4.jpg" alt="" class="works__img">
+                        </a>
+                        <div class="works__card">
+                            <div class="works__card-text">
+                                <h3 class="project">Fourth project</h3>
+                                <p>This project is not finished yet but will be ready soon.</p>
+                            </div>
+                            <a href="#popup-4" class="btn btn--green-round works__card-btn"id="btn-4">To learn more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1-of-3">
+                    <div class="works">
+                         <a href="" title="" class="works__link">
+                            <img src="static/img/5.jpg" alt="" class="works__img">
+                        </a>
+                        <div class="works__card">
+                            <div class="works__card-text">
+                                <h3 class="project">Fifth project</h3>
+                                <p>This project is not finished yet but will be ready soon.</p>
+                            </div>
+                            <a href="#popup-5" class="btn btn--green-round works__card-btn" id="btn-5">To learn more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1-of-3">
+                    <div class="works"> <a href="" title="" class="works__link">
+                            <img src="static/img/6.jpg" alt="" class="works__img">
+                        </a>
+                        <div class="works__card">
+                            <div class="works__card-text">
+                                <h3 class="project">Sixth project</h3>
+                                <p>This project is not finished yet but will be ready soon.</p>
+                            </div>
+                            <a href="#popup-6" class="btn btn--green-round works__card-btn" id="btn-6">To learn more</a>
+                        </div></div>
+                </div>
+            </div>
+            </div>
+        <!-- Button Right -->
+        <a class="btn__next" onclick="plusSlides(1)">&#10095;</a>
+
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        </div>
+    </section>
+    <!-- *-+*-+*-+*-+*-+*-+*-+*-+*-+ Contact Section *-+*-+*-+*-+*-+*-+*-+*-+ -->
+    <section class="section-contact" id="contact">
+        <div class="u-center-text u-margin-bottom-big">
+            <h2 class="heading-secondary-2">
+                Get in touch
+            </h2>
+        </div>
+        <div class="contact">
+            <form action="submit_form" method="post" class="contact__form" id="form">
+                <div class="contact__form-group">
+                    <input type="text" id="name" name="name" class="contact__form-input" placeholder="Name" required>
+                    <label for="name" class="contact__form-label">Name</label>
+                </div>
+                <div class="contact__form-group">
+                    <input type="email" id="email" name="email" class="contact__form-input" placeholder="Email " required>
+                    <label for="email" class="contact__form-label">Email</label>
+                </div>
+                <div class="contact__form-group">
+                    <input type="text" id="subject" name="subject" class="contact__form-input" placeholder="Subject" required>
+                    <label for="subject" class="contact__form-label">Subject</label>
+                </div>
+                <div class="contact__form-group">
+                    <textarea id="message"  name="message" class="contact__form-input" placeholder="Enter your message" required></textarea>
+                    <label for="message" class="contact__form-label">Enter your message</label>
+                </div>
+                <button type="submit" id="submit" class="btn btn--lite-round contact__btn">Send</button>
+            </form>
+            <div class="contact__social">
+                <div class="contact__social-box">
+                       <div class="social">
+                    <a href="https://www.facebook.com/anastasia.tychinina" class="contact__social-net">
+                        <ion-icon class="icon" name="logo-facebook"></ion-icon></a>
+                </div>
+                <div class="social">
+                    <a href="https://www.instagram.com/nastiacortes/" class="contact__social-net">
+                        <ion-icon class="icon" name="logo-instagram"></ion-icon></a>
+                </div>
+                <div class="social">
+                    <a href="https://github.com/AnastasiaCortes" class="contact__social-net">
+                        <ion-icon class="icon" name="logo-github"></ion-icon></a>
+                </div>
+                <div class="social">
+                    <a href="https://www.linkedin.com/in/anastasia-cortes-1a37a4b7/" class="contact__social-net">
+                        <ion-icon class="icon" name="logo-linkedin"></ion-icon></a>
+                </div>
+
+                    </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <p class="copy">&copy; Anastasia Cortes 2020</p>
+</footer>
+<!-- *-+*-+*-+*-+*-+*-+*-+*-+*-+ Popup *-+*-+*-+*-+*-+*-+*-+*-+ -->
+ <div class="popup" id="popup-1">
+    <div class="popup__content">
+        <div class="popup__left">
+            <img src="static/img/1.jpg" alt="Tour photo" class="popup__img">
+
+        </div>
+        <div class="popup__right">
+            <a href="#projects" id="close-1" class="popup__close">&times;</a>
+            <h2 class="heading-secondary heading-secondary-active u-margin-bottom-small popup__heading"> Project One</h2>
+            <p class="popup__text">
+                This project was designed and created by Anastasia Cortes. It's a .......... and it does ........ . Front-end is build with ......, ......, ....., ...... . The back-end is build with ...., ..., .... .
+            </p>
+            <a href="#" class="btn-text popup__btn">View Project &rarr;</a>
+
+            <a href="#" class="btn-text">View Code &rarr;</a>
+        </div>
+    </div>
+</div>
+
+<div class="popup" id="popup-2">
+    <div class="popup__content">
+        <div class="popup__left">
+            <img src="static/img/2.jpg" alt="Tour photo" class="popup__img">
+
+        </div>
+        <div class="popup__right">
+            <a href="#projects" id="close-2" class="popup__close">&times;</a>
+            <h2 class="heading-secondary heading-secondary-active u-margin-bottom-small popup__heading"> Project Two</h2>
+            <p class="popup__text">
+                This project was designed and created by Anastasia Cortes. It's a .......... and it does ........ . Front-end is build with ......, ......, ....., ...... . The back-end is build with ...., ..., .... .
+            </p>
+            <a href="#" class="btn-text popup__btn">View Project &rarr;</a>
+
+            <a href="#" class="btn-text">View Code &rarr;</a>
+        </div>
+    </div>
+</div>
+
+<div class="popup" id="popup-3">
+    <div class="popup__content">
+        <div class="popup__left">
+            <img src="static/img/3.jpg" alt="Tour photo" class="popup__img">
+
+        </div>
+        <div class="popup__right">
+            <a href="#projects" id="close-3" class="popup__close">&times;</a>
+            <h2 class="heading-secondary heading-secondary-active u-margin-bottom-small popup__heading"> Project Three</h2>
+            <p class="popup__text">
+                This project was designed and created by Anastasia Cortes. It's a .......... and it does ........ . Front-end is build with ......, ......, ....., ...... . The back-end is build with ...., ..., .... .
+            </p>
+            <a href="#" class="btn-text popup__btn">View Project &rarr;</a>
+
+            <a href="#" class="btn-text">View Code &rarr;</a>
+        </div>
+    </div>
+</div>
+
+<div class="popup" id="popup-4">
+    <div class="popup__content">
+        <div class="popup__left">
+            <img src="static/img/4.jpg" alt="Tour photo" class="popup__img">
+
+        </div>
+        <div class="popup__right">
+            <a href="#projects" id="close-4"class="popup__close">&times;</a>
+            <h2 class="heading-secondary heading-secondary-active u-margin-bottom-small popup__heading"> Project Four</h2>
+            <p class="popup__text">
+                This project was designed and created by Anastasia Cortes. It's a .......... and it does ........ . Front-end is build with ......, ......, ....., ...... . The back-end is build with ...., ..., .... .
+            </p>
+            <a href="#" class="btn-text popup__btn">View Project &rarr;</a>
+
+            <a href="#" class="btn-text">View Code &rarr;</a>
+        </div>
+    </div>
+</div>
+
+<div class="popup" id="popup-5" >
+    <div class="popup__content">
+        <div class="popup__left">
+            <img src="static/img/5.jpg" alt="Tour photo" class="popup__img">
+
+        </div>
+        <div class="popup__right">
+            <a href="#projects"id="close-5" class="popup__close">&times;</a>
+            <h2 class="heading-secondary heading-secondary-active u-margin-bottom-small popup__heading"> Project Five</h2>
+            <p class="popup__text">
+                This project was designed and created by Anastasia Cortes. It's a .......... and it does ........ . Front-end is build with ......, ......, ....., ...... . The back-end is build with ...., ..., .... .
+            </p>
+            <a href="#" class="btn-text popup__btn">View Project &rarr;</a>
+
+            <a href="#" class="btn-text">View Code &rarr;</a>
+        </div>
+    </div>
+</div>
+
+<div class="popup" id="popup-6" >
+    <div class="popup__content">
+        <div class="popup__left">
+            <img src="static/img/6.jpg" alt="Tour photo" class="popup__img">
+
+        </div>
+        <div class="popup__right">
+            <a href="#projects" id="close-6"class="popup__close">&times;</a>
+            <h2 class="heading-secondary heading-secondary-active u-margin-bottom-small popup__heading"> Project Six</h2>
+            <p class="popup__text">
+                This project was designed and created by Anastasia Cortes. It's a .......... and it does ........ . Front-end is build with ......, ......, ....., ...... . The back-end is build with ...., ..., .... .
+            </p>
+            <a href="#" class="btn-text popup__btn">View Project &rarr;</a>
+
+            <a href="#" class="btn-text">View Code &rarr;</a>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+</body>
+
+<script type="text/javascript" src="./static/script.js"></script>
+<script  src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+
+</html>
