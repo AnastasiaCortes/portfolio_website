@@ -1,6 +1,9 @@
 .navigation{
   background-color: rgba($color-white,0);
   padding-right: 3rem;
+  @include respond(phone-small){
+    padding-top: 1rem;
+  }
 
 
   &:hover &__link:not(:hover){
@@ -32,6 +35,11 @@
     display: block;
     padding: 1rem;
     margin: 1rem;
+
+    @include respond(phone-small){
+      padding: 1rem .5rem;
+      margin: 1rem .5rem;
+    }
 
     animation-name: moveInLeft;
     animation-duration: 1.5s;

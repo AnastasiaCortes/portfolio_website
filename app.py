@@ -50,4 +50,4 @@ def send_confirmation_email(data):
 
 
 if __name__ == "__main__":
-    app.run(port=4972, debug=True)
+    app.run()

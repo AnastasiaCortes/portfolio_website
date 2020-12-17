@@ -59,9 +59,9 @@
     left: 0;
     right: 0;
     border-radius: 0;
-    border-bottom: .5rem solid rgba($color-black, .6);
-    border-left: .5rem solid rgba($color-black, .6);
-    border-right: .5rem solid rgba($color-black, .6);
+    border-bottom: .5rem solid rgba($color-black, .5);
+    border-left: .5rem solid rgba($color-black, .5);
+    border-right: .5rem solid rgba($color-black, .5);
     padding: .5rem 2rem;
     background-color: rgba($color-beige-light,.9);
     box-shadow: none;
@@ -70,12 +70,13 @@
     &-text{
       margin-bottom: 3rem;
       @include respond(phone){
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
       }
     }
     &-btn{
       @include respond(phone){
         margin-bottom:1rem;
+        background-color: $color-green-dark;
       }
     }
   }
