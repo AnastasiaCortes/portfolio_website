@@ -76,7 +76,7 @@
     width: 33%;
     display: table-cell;
 
-    @include respond(phone-small){
+    @include respond(phone){
       display: none;
     }
 
@@ -91,7 +91,7 @@
     vertical-align: middle;
     padding: 3rem 3rem;
 
-    @include respond(phone-small){
+    @include respond(phone){
       width: auto;
       display: block;
 
@@ -103,7 +103,7 @@
     padding: 3rem 0 0 2rem;
     width: 100%;
 
-    @include respond(phone-small){
+    @include respond(phone){
       display: none;
     }
   }

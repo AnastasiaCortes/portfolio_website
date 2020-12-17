@@ -10,7 +10,7 @@
   outline-offset: 2.5rem;
   transition: all .1s;
 
-  @include respond(phone-small){
+  @include respond(phone){
     text-align: center;
   }
 
@@ -27,7 +27,7 @@
       width: 30rem;
       height: 30rem;
       float: right;
-      transform: translateX(0) ;
+      transform: translateX(-1rem) ;
     }
 
     position: relative;
@@ -41,7 +41,7 @@
       //for the element to flow in a circle
       shape-outside: circle(50% at 50% 50%);
 
-      @include respond(phone-small){
+      @include respond(phone){
         shape-outside: none;
       }
 
