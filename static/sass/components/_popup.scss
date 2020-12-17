@@ -54,6 +54,10 @@
     overflow: hidden;
     backdrop-filter: blur(8px);
 
+    @include respond(phone){
+      display: block;
+    }
+
 
     opacity: 0;
     //You can have only one transform
@@ -72,6 +76,10 @@
     width: 33%;
     display: table-cell;
 
+    @include respond(phone-small){
+      display: none;
+    }
+
 
   }
 
@@ -82,12 +90,22 @@
     display: table-cell;
     vertical-align: middle;
     padding: 3rem 3rem;
+
+    @include respond(phone-small){
+      width: auto;
+      display: block;
+
+    }
   }
 
   &__img{
     display: inline-block ;
     padding: 3rem 0 0 2rem;
     width: 100%;
+
+    @include respond(phone-small){
+      display: none;
+    }
   }
 
   &__text{
