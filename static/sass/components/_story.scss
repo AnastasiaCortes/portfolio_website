@@ -12,6 +12,7 @@
 
   @include respond(phone){
     text-align: center;
+     padding: 4rem;
   }
 
 
@@ -26,8 +27,10 @@
     @include respond(phone-small){
       width: 30rem;
       height: 30rem;
-      float: right;
-      transform: translateX(-1rem) ;
+      float: none;
+      margin: 2rem 7rem;
+      transform: translateX(-1rem);
+      display: block;
     }
 
     position: relative;
@@ -41,7 +44,7 @@
       //for the element to flow in a circle
       shape-outside: circle(50% at 50% 50%);
 
-      @include respond(phone){
+      @include respond(phone-small){
         shape-outside: none;
       }
 
@@ -69,6 +72,11 @@
     box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
 
     }
+
+   @include respond(phone-small){
+      padding: 2rem;
+   }
+
   &:hover{
     outline: 1.2rem solid $color-green-lite;
     transform:  scale(1.07) translateY(1rem);
